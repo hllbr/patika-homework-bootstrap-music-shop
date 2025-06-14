@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkedin Clone</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top shadow-sm">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand d-flex align-items-center ms-3" href="#">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="Linkedin Logo" width="36" height="36" class="me-2">
+            </a>
+            <form class="d-flex align-items-center ms-3 flex-grow-1" role="search" style="max-width: 300px;">
+                <input class="form-control me-2" type="search" placeholder="Arama yapın" aria-label="Search">
+            </form>
+            <ul class="navbar-nav mx-auto flex-row align-items-center gap-3">
+                <li class="nav-item text-center">
+                    <a class="nav-link" href="#"><i class="fas fa-home"></i><div class="small">Ana Sayfa</div></a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link" href="#"><i class="fas fa-user-friends"></i><div class="small">Ağım</div></a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link" href="#"><i class="fas fa-briefcase"></i><div class="small">İş İlanları</div></a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link" href="#"><i class="fas fa-comment-dots"></i><div class="small">Mesajlaşma</div></a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link position-relative" href="#">
+                        <span class="icon-badge-parent position-relative">
+                            <i class="fas fa-bell"></i>
+                            <span class="position-absolute badge rounded-pill bg-danger">3</span>
+                        </span>
+                        <div class="small">Bildirimler</div>
+                    </a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link d-flex flex-column align-items-center" href="#">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="profile-pic-navbar mb-1" alt="Profil" width="28" height="28">
+                        <span class="small">Ben</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid main-content-layout">
+        <div class="row justify-content-center">
+            <!-- Sol Panel -->
+            <aside class="col-2 d-none d-md-block pt-4">
+                <div class="card text-center p-3 mb-3">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" class="profile-pic mx-auto mb-2" alt="Profil" width="72" height="72">
+                    <h6 class="mb-0">Kullanıcı Adı</h6>
+                    <small class="text-muted">Yazılım Geliştirici</small>
+                </div>
+                <div class="card p-2 mb-3">
+                    <a href="#" class="text-decoration-none">Profilinizi Görüntüleyin</a>
+                </div>
+            </aside>
+
+            <!-- Orta Panel -->
+            <main class="col-12 col-md-6 pt-4">
+                <!-- Gönderi Başlat -->
+                <div class="card mb-3 p-3">
+                    <div class="d-flex align-items-center mb-2">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="profile-pic me-2" alt="Profil" width="48" height="48">
+                        <input type="text" class="form-control rounded-pill" placeholder="Bir gönderi başlatın...">
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <button class="btn btn-light d-flex align-items-center"><i class="fas fa-image me-1" style="color:#70B5F9;"></i>Fotoğraf</button>
+                        <button class="btn btn-light d-flex align-items-center"><i class="fas fa-video me-1" style="color:#7FC15E;"></i>Video</button>
+                        <button class="btn btn-light d-flex align-items-center"><i class="fas fa-calendar-alt me-1" style="color:#E7A33E;"></i>Etkinlik</button>
+                        <button class="btn btn-light d-flex align-items-center"><i class="fas fa-edit me-1" style="color:#F5987E;"></i>Yazı Yaz</button>
+                    </div>
+                </div>
+                <!-- En Yeni Sticky -->
+                <div class="card mb-3 p-2 sticky-top en-yeni" style="top:4rem; z-index:1;">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="fw-bold">En Yeni</span>
+                        <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+                <!-- Post -->
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-2">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" class="profile-pic me-2" alt="Profil" width="48" height="48">
+                            <div>
+                                <div class="fw-bold">Kullanıcı Adı</div>
+                                <div class="text-muted small">Yazılım Geliştirici</div>
+                                <div class="text-muted small">1 saat önce</div>
+                            </div>
+                        </div>
+                        <p>Linkedin Clone projesi için ilk gönderi!</p>
+                        <div class="d-flex align-items-center mt-3">
+                            <button class="btn btn-outline-primary btn-sm me-2"><i class="far fa-thumbs-up me-1"></i>Beğen</button>
+                            <button class="btn btn-outline-danger btn-sm me-2"><i class="far fa-heart me-1"></i>Kalp</button>
+                            <button class="btn btn-outline-warning btn-sm me-2"><i class="far fa-hand-paper me-1"></i>Alkış</button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Sağ Panel -->
+            <aside class="col-3 d-none d-md-block pt-4">
+                <div class="card p-3 mb-3 sticky-top" style="top:4rem; overflow:visible;">
+                    <h6 class="fw-bold">Bugünün en çok izlenen eğitimleri</h6>
+                    <ul class="list-unstyled">
+                        <li class="d-flex align-items-center mb-2">
+                            <i class="fas fa-play-circle me-2 text-primary"></i>
+                            <span>Bootstrap 5 ile Responsive Tasarım</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-2">
+                            <i class="fas fa-play-circle me-2 text-primary"></i>
+                            <span>CSS Flexbox ve Grid</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-2">
+                            <i class="fas fa-play-circle me-2 text-primary"></i>
+                            <span>JavaScript Temelleri</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card p-3 mt-3 sticky-top" style="top:20rem; overflow:visible;">
+                    <div class="d-flex justify-content-between">
+                        <a href="#" class="text-decoration-none">Hakkında</a>
+                        <a href="#" class="text-decoration-none">Yardım</a>
+                        <a href="#" class="text-decoration-none">Gizlilik</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

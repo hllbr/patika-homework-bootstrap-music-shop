@@ -1,0 +1,205 @@
+/* Linkedin Clone Custom Styles */ 
+body {
+    background-color: #f3f2ef;
+    padding-top: 72px; /* Navbar yüksekliği kadar boşluk */
+}
+
+/* Navbar */
+.navbar {
+    height: 64px;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+    z-index: 1000;
+}
+.navbar-brand {
+    margin-left: 16px;
+}
+.navbar .form-control {
+    margin-right: 24px;
+    min-width: 200px;
+}
+.navbar-nav .nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.95rem;
+    padding: 0 10px;
+    height: 54px;
+}
+.profile-pic-navbar {
+    border-radius: 50%;
+    border: 2px solid #fff;
+    width: 28px;
+    height: 28px;
+    object-fit: cover;
+}
+
+/* Main Layout */
+.main-content-layout {
+    margin-top: 0;
+}
+
+/* Sol Panel */
+.profile-pic {
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 2px #fff;
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+}
+.card.text-center {
+    align-items: center;
+}
+
+/* Gönderi Başlat */
+.card input[type="text"] {
+    background: #eef3f8;
+    border: none;
+    font-size: 1rem;
+}
+.card input[type="text"]::placeholder {
+    color: #666;
+}
+.card .btn {
+    font-weight: 500;
+    border-radius: 8px;
+    margin-right: 8px;
+}
+.card .btn:last-child {
+    margin-right: 0;
+}
+.card .fa-image { color: #70B5F9; }
+.card .fa-video { color: #7FC15E; }
+.card .fa-calendar-alt { color: #E7A33E; }
+.card .fa-edit { color: #F5987E; }
+
+/* En Yeni Sticky */
+.en-yeni {
+    position: sticky !important;
+    top: 4rem;
+    overflow: visible !important;
+    z-index: 10;
+}
+
+/* Post */
+.card-body .profile-pic {
+    width: 48px;
+    height: 48px;
+    border: 2px solid #fff;
+}
+.card-body .fw-bold {
+    font-size: 1.05rem;
+}
+.card-body .text-muted.small {
+    font-size: 0.9rem;
+}
+.card-body .btn {
+    margin-right: 12px;
+}
+.card-body .btn:last-child {
+    margin-right: 0;
+}
+
+/* Sağ Panel */
+aside.col-3 {
+    max-width: 320px;
+}
+.sticky-top {
+    position: sticky !important;
+}
+.card.sticky-top {
+    top: 4rem !important;
+    overflow: visible !important;
+}
+.card .list-unstyled li {
+    font-size: 0.98rem;
+}
+.card .fa-play-circle {
+    font-size: 1.2rem;
+}
+.card .d-flex.justify-content-between a {
+    font-size: 0.95rem;
+    color: #0073b1;
+    margin-left: 8px;
+}
+.card .d-flex.justify-content-between a:first-child {
+    margin-left: 0;
+}
+
+/* Responsive */
+@media (max-width: 991.98px) {
+    aside.col-2, aside.col-3 {
+        display: none !important;
+    }
+    main.col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar .form-control {
+        min-width: 120px;
+        margin-right: 8px;
+    }
+    .navbar-brand {
+        margin-left: 0;
+    }
+}
+
+/* Navbar Badge (Bildirim Sayısı) */
+.navbar .badge {
+    font-size: 0.68rem;
+    padding: 2px 5px;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    transform: translate(50%, -40%);
+    z-index: 2;
+    min-width: 16px;
+    min-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #fff;
+    line-height: 1;
+}
+
+/* Navbar Menü Ortalama ve Boşluklar */
+.navbar-nav {
+    height: 64px;
+    align-items: stretch;
+    justify-content: center;
+    flex: 1 1 auto;
+    gap: 0;
+}
+.navbar .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Arama kutusu ile menü arasında esnek boşluk */
+.navbar .flex-grow-1 {
+    flex-grow: 1 !important;
+}
+
+/* Nav-link'ler arası eşit boşluk */
+.navbar-nav .nav-link {
+    margin: 0 8px;
+}
+
+/* Ben Kısmı (Profil) */
+.navbar-nav .nav-link .profile-pic-navbar {
+    margin-bottom: 2px;
+}
+
+/* Responsive spacing for search and nav */
+@media (min-width: 992px) {
+    .navbar .form-control {
+        margin-right: 40px;
+    }
+} 
