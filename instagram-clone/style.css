@@ -1,0 +1,122 @@
+body {
+    background-color: #fafafa;
+    padding-top: 54px;
+}
+
+/* Navbar Styles */
+.navbar {
+    height: 54px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.logo {
+    margin-left: 192px;
+}
+
+.search-box {
+    margin-left: 5rem;
+}
+
+.search-box input {
+    background-image: url('https://www.instagram.com/static/images/search-icon.png/5a3566d9c13b.png');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 10px;
+    padding-left: 30px;
+    width: 215px;
+}
+
+.nav-icons {
+    margin-left: 5rem;
+    margin-top: 0.5rem;
+}
+
+.nav-icons i {
+    font-size: 1.2rem;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+
+/* Stories Styles */
+.stories {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding: 1rem 0;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.story img {
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    padding: 3px;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.story span {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+/* Post Styles */
+.card {
+    border: 1px solid #dbdbdb;
+    margin-bottom: 2rem;
+}
+
+.card-header {
+    padding: 0.75rem 1rem;
+}
+
+.card-body i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.card-footer {
+    padding: 0.75rem 1rem;
+}
+
+.card-footer input {
+    background: none;
+}
+
+/* Right Panel Styles */
+.sticky-sidebar {
+    position: sticky;
+    top: 84px;
+}
+
+.right-panel {
+    background-color: white;
+    border: none;
+    padding: 1rem;
+}
+
+.right-panel img {
+    width: 56px;
+    height: 56px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .logo {
+        margin-left: 0;
+    }
+    
+    .search-box {
+        margin-left: 1rem;
+    }
+    
+    .nav-icons {
+        margin-left: 1rem;
+    }
+} 
